@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="InventoryPane" prefHeight="700.0" prefWidth="1166.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InventoryController">
+   <children>
+      <AnchorPane prefHeight="640.0" prefWidth="350.0" style="-fx-background-color: white;" stylesheets="@../../Style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Group layoutX="40.0" layoutY="506.0">
+               <children>
+                  <Button fx:id="buttonClear" layoutX="141.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonClear" prefHeight="40.0" prefWidth="130.0" styleClass="button-radius" text="Clear" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleButtonAdd" prefHeight="40.0" prefWidth="130.0" style="-fx-background-radius: 50;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonUpdate" layoutX="141.0" mnemonicParsing="false" onAction="#handleButtonUpdate" prefHeight="40.0" prefWidth="130.0" style="-fx-background-radius: 50;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonDelete" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonDelete" prefHeight="40.0" prefWidth="130.0" styleClass="button-radius" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="25.0" layoutY="110.0">
+               <children>
+                  <Label layoutX="-1.0" layoutY="-5.0" styleClass="font" text="Product Name">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfProductName" layoutY="14.0" prefHeight="27.0" prefWidth="300.0" style="-fx-text-Inner-color: black; -fx-padding: 3px 3px 3px 3px; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 5;" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="tfProductStock" layoutY="83.0" prefHeight="27.0" prefWidth="300.0" style="-fx-text-Inner-color: black; -fx-padding: 3px 3px 3px 3px; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 5;" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="1.0" layoutY="62.0" styleClass="font" text="Product Stock">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfProductID" layoutY="-57.0" prefHeight="27.0" prefWidth="300.0" style="-fx-text-Inner-color: black; -fx-padding: 3px 3px 3px 3px; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 5;" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutY="-76.0" styleClass="font" text="Product ID">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <AnchorPane layoutX="42.0" layoutY="323.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-width: 2px; -fx-border-color: #1a1a1a;" AnchorPane.leftAnchor="42.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="130.0" fitWidth="130.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="buttonImport" layoutX="215.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleButtonImport" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 50;" text="Import" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font></Button>
+            <TextField fx:id="tfLocation" layoutX="26.0" layoutY="263.0" prefHeight="27.0" prefWidth="300.0" style="-fx-text-Inner-color: black; -fx-padding: 3px 3px 3px 3px; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 5;" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="26.0" layoutY="242.0" styleClass="font" text="Location">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="377.0" prefHeight="640.0" prefWidth="759.0" stylesheets="@../../Style.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="377.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TableView fx:id="tableViewProduct" layoutY="7.0" onMouseClicked="#inventorySelectData" prefHeight="680.0" prefWidth="765.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="productID" prefWidth="93.60003662109375" text="ID" />
+                <TableColumn fx:id="productName" prefWidth="248.79998779296875" text="Product Name" />
+                  <TableColumn fx:id="productStock" minWidth="0.0" prefWidth="100.0" text="Stock" />
+                  <TableColumn fx:id="location" minWidth="0.0" prefWidth="327.199951171875" text="Location" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

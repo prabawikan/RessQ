@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="1150.0" styleClass="background" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+   <children>
+      <AnchorPane layoutX="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1154.0" styleClass="background" stylesheets="@../../../../Tugas%20Akhir/src/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="577.0" prefHeight="578.0" prefWidth="569.0">
+               <children>
+                  <Group layoutX="35.0" layoutY="109.0">
+                     <children>
+                        <TextField fx:id="tfEmail" prefHeight="42.0" prefWidth="234.0" promptText="Email" style="-fx-padding: 3px 3px 3px 10px;" styleClass="text-field1" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="notifEmail" layoutY="47.0" prefHeight="18.0" prefWidth="200.0" text="." textFill="#ff4646" />
+                     </children>
+                  </Group>
+                  <Group layoutX="35.0" layoutY="395.0">
+                     <children>
+                        <TextField fx:id="tfAlamat" prefHeight="42.0" prefWidth="234.0" promptText="Alamat" style="-fx-padding: 3px 3px 3px 10px;" styleClass="text-field1" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="notifAlamat" layoutY="47.0" prefHeight="18.0" prefWidth="200.0" text="." textFill="#ff4646" />
+                     </children>
+                  </Group>
+                  <Group layoutX="35.0" layoutY="300.0">
+                     <children>
+                        <TextField fx:id="tfNoTelepon" prefHeight="42.0" prefWidth="234.0" promptText="No Telepon" style="-fx-padding: 3px 3px 3px 10px;" styleClass="text-field1" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="notifNoTelepon" layoutY="47.0" prefHeight="18.0" prefWidth="200.0" text="." textFill="#ff4646" />
+                     </children>
+                  </Group>
+                  <Group layoutX="301.0" layoutY="108.0">
+                     <children>
+                        <TextField fx:id="tfUsername" prefHeight="42.0" prefWidth="234.0" promptText="Username" style="-fx-padding: 3px 3px 3px 10px;" styleClass="text-field1" stylesheets="@../../Style.css">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="notifUsername" layoutY="48.0" prefHeight="18.0" prefWidth="200.0" text="." textFill="#ff4646" />
+                     </children>
+                  </Group>
+                  <Group layoutX="301.0" layoutY="204.0">
+                     <children>
+                        <PasswordField fx:id="tfPassword" prefHeight="42.0" prefWidth="234.0" promptText="Password" style="-fx-padding: 3px 3px 3px 10px;" styleClass="text-field1" stylesheets="@../../Style.css">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <Label fx:id="notifPassword" layoutY="47.0" prefHeight="18.0" prefWidth="200.0" text="." textFill="#ff4646" />
+                     </children>
+                  </Group>
+                  <Button fx:id="buttonSignIn" layoutX="185.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleButtonSignIn" prefHeight="33.0" prefWidth="200.0" style="-fx-border-radius: 20px; -fx-background-color: transparent; -fx-border-width: 1px; -fx-border-color: #1ab188;" stylesheets="@Style.css" text="Sign In" textFill="#cfcfcf">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonSignUp" layoutX="185.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleButtonSignUp" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 20px; -fx-background-color: #00ffb7; -fx-text-fill: black;" stylesheets="@Style.css" text="Sign Up">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#1ab188" layoutX="195.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" textAlignment="CENTER" wrappingWidth="179.63417053222656">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="36.0" />
+                     </font>
+                  </Text>
+                  <Group layoutX="35.0" layoutY="136.0">
+                     <children>
+                        <TextField fx:id="tfNamaLengkap" layoutY="66.1875" prefHeight="42.0" prefWidth="234.0" promptText="Nama Lengkap" style="-fx-padding: 3px 3px 3px 10px;" styleClass="text-field1" stylesheets="@../../../../Tugas%20Akhir/src/Style.css">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="notifNamaLengkap" layoutY="116.0" prefHeight="18.0" prefWidth="200.0" text="." textFill="#ff4646" />
+                     </children>
+                  </Group>
+                  <Group layoutX="301.0" layoutY="300.0">
+                     <children>
+                        <PasswordField fx:id="tfPassword1" prefHeight="42.0" prefWidth="234.0" promptText="Konfirmasi Password" style="-fx-padding: 3px 3px 3px 10px;" styleClass="text-field1" stylesheets="@../../Style.css">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <Label fx:id="notifPassword1" layoutY="47.0" prefHeight="18.0" prefWidth="200.0" text="." textFill="#ff4646" />
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="578.0" fitWidth="593.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Bahan/488.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="578.0" prefWidth="578.0" styleClass="background1-login-form" stylesheets="@../../Style.css">
+               <children>
+                  <Text fill="WHITE" layoutX="55.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RessQ" wrappingWidth="158.56405639648438">
+                     <font>
+                        <Font name="Futura Md BT Bold Italic" size="36.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="130.0" fitWidth="392.0" layoutX="55.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Bahan/Group%201.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="55.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By reducing food wastage, we can provide enough food for future generations and create a more sustainable world." wrappingWidth="385.40002441406244">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

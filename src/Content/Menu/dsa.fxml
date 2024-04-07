@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="InventoryPane" prefHeight="700.0" prefWidth="1166.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InventoryController">
+   <children>
+      <AnchorPane prefHeight="640.0" prefWidth="350.0" style="-fx-background-color: white;" stylesheets="@../../Style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Group layoutX="25.0" layoutY="110.0" />
+            <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="377.0" prefHeight="640.0" prefWidth="759.0" stylesheets="@../../Style.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="377.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TableView fx:id="tableViewProduct" layoutY="7.0" onMouseClicked="#inventorySelectData" prefHeight="680.0" prefWidth="765.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="productID" prefWidth="93.60003662109375" text="ID" />
+                <TableColumn fx:id="productName" prefWidth="248.79998779296875" text="Product Name" />
+                  <TableColumn fx:id="productStock" minWidth="0.0" prefWidth="100.0" text="Stock" />
+                  <TableColumn fx:id="location" minWidth="0.0" prefWidth="327.199951171875" text="Location" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="homeButton" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: white;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <BorderPane layoutX="-14.0" prefHeight="768.0" prefWidth="1377.0" styleClass="background" stylesheets="@Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="700.0" prefWidth="200.0" style="-fx-border-width: 0 2 0 0; -fx-border-color: white; -fx-background-color: #1a1a1a;" styleClass="background" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="buttonNews" alignment="CENTER" layoutY="244.0" mnemonicParsing="false" onAction="#handleButtonNews" prefHeight="50.0" prefWidth="200.0" style="-fx-cursor: hand; -fx-background-color: #303030;" text="  News" textAlignment="CENTER" textFill="#00ffb7" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button-news" />
+                        <String fx:value="button-menu" />
+                        <String fx:value="menu-button-hover" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Bahan/Frame1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonMenu" layoutY="309.0" mnemonicParsing="false" onAction="#handleButtonMenu" prefHeight="50.0" prefWidth="200.0" style="-fx-cursor: hand;" text="  Menu" textFill="#00ffae" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button-news" />
+                        <String fx:value="button-menu" />
+                        <String fx:value="menu-button-hover" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Bahan/Frame2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="60.0" layoutX="70.0" layoutY="60.0">
+                     <image>
+                        <Image url="@Bahan/user.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="50.0" layoutX="125.0" layoutY="223.0" startX="-100.0" stroke="#00ffb7" />
+                  <Button fx:id="buttonInventory" layoutY="374.0" mnemonicParsing="false" onAction="#handleButtonInventory" prefHeight="50.0" prefWidth="200.0" style="-fx-cursor: hand;" text="   Inventory" textAlignment="CENTER" textFill="#00ffae" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button-news" />
+                        <String fx:value="menu-button-hover" />
+                        <String fx:value="button-menu" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Bahan/dasdas.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonCustomerOrders" layoutY="509.0" mnemonicParsing="false" onAction="#handleButtonCustomerOrders" prefHeight="50.0" style="-fx-cursor: hand;" text="  Order" textFill="#00ffae" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button-news" />
+                        <String fx:value="menu-button-hover" />
+                        <String fx:value="button-menu" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Bahan/Frame.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fx:id="textNamaLengkap" fill="#00ffae" layoutX="9.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " textAlignment="CENTER" wrappingWidth="185.33673095703125" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="10.463269042968761">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="buttonChart" layoutX="-2.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleButtonChart" prefHeight="50.0" style="-fx-cursor: hand;" text="  Chart" textFill="#00ffae" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button-news" />
+                        <String fx:value="menu-button-hover" />
+                        <String fx:value="button-menu" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Bahan/her.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="66.0" prefWidth="1366.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: white; -fx-background-color: #1a1a1a;" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#00ffae" layoutX="54.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RessQ" AnchorPane.bottomAnchor="14.24609375" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="14.3359375">
+                     <font>
+                        <Font name="Futura Md BT Bold Italic" size="36.0" />
+                     </font>
+                  </Text>
+                  <MenuButton layoutX="1261.0" layoutY="11.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="background" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="33.40000000000009" AnchorPane.topAnchor="11.0">
+                     <items>
+                        <MenuItem fx:id="buttonAccount" mnemonicParsing="false" onAction="#handleButtonAccount" text="Account">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Bahan/AccountBlack.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="buttonLogout" mnemonicParsing="false" onAction="#handleButtonLogout" text="Logout">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Bahan/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@Bahan/icosn.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="SansSerif" size="12.0" />
+                     </font>
+                  </MenuButton>
+                  <Label fx:id="labelTitle" alignment="CENTER" layoutX="200.0" layoutY="16.0" prefHeight="42.0" prefWidth="1060.0" text="News" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="contentPane" prefHeight="700.0" prefWidth="1166.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

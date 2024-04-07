@@ -1,0 +1,168 @@
+.backgroud-transparent {
+  -fx-background-color: transparent;
+}
+.background {
+  -fx-background-color: #1a1a1a;
+}
+.background-login-form {
+  -fx-background-image: url("Bahan/488.jpg");
+}
+
+.button-transparent {
+  -fx-background-radius: 20px;
+  -fx-background-color: transparent;
+}
+
+.background1-login-form {
+  -fx-background-color: rgba(26, 26, 26, 0.85);
+}
+.anchorpane-top {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0, 0, 4);
+}
+
+.button-img {
+  -fx-background-color: transparent;
+}
+
+.text-field {
+  -fx-background-color: transparent;
+  -fx-border-color: #00ffb7;
+  -fx-border-width: 0 0 2px 0;
+  -fx-padding: 3px 3px 3px 25px;
+  -fx-text-inner-color: #ffff;
+}
+.text-field2 {
+  -fx-background-color: white;
+  -fx-border-color: #00ffb7;
+  -fx-border-width: 2px;
+  -fx-padding: 3px 3px 3px 25px;
+  -fx-text-inner-color: #ffff;
+}
+.button {
+  -fx-background-color: #1a1a1a;
+  -fx-text-fill: #00ffb7;
+  -fx-cursor: hand;
+}
+.button-login:hover {
+  -fx-background-color: #00ffbf;
+}
+.button-news {
+  -fx-background-color: transparent;
+}
+
+.button-menu {
+  -fx-alignment: center-left;
+}
+
+.text-shadow {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 4, 2);
+}
+
+.box-shadow {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+.radius {
+  -fx-background-radius: 20px;
+}
+
+.button-radius {
+  -fx-background-radius: 50px;
+}
+
+.table-view {
+  -fx-background-color: transparent;
+  -fx-padding: 0;
+  -fx-border-color: #1a1a1a;
+  -fx-border-width: 3px;
+}
+
+.table-view .column-header {
+  -fx-background-color: #1a1a1a;
+  -fx-background-insets: 0 0 0 0;
+  -fx-font-weight: bold;
+}
+.table-view .column-header,
+.filter {
+  -fx-backgorund-color: transparent;
+  -fx-size: 45px;
+}
+
+.table-view .column-header .label {
+  -fx-text-fill: #fff;
+  -fx-font-size: 14px;
+}
+.table-view .table-row-cell {
+  -fx-background-color: #ffffff;
+}
+
+.table-view .table-row-cell .text {
+  -fx-font-size: 18px;
+}
+
+.table-view .table-row-cell:selected {
+  -fx-background-color: #303030;
+}
+
+.table-view .table-row-cell:pressed {
+  -fx-background-color: #303030;
+}
+
+.menu-button-hover:hover {
+  -fx-background-color: #303030;
+}
+
+.spinner .text-input {
+  -fx-text-fill: white;
+  -fx-font-size: 16px;
+}
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+  -fx-background-color: #1a1a1a;
+}
+
+.spinner .text-field {
+  -fx-background-color: #1a1a1a;
+  -fx-border-width: 0;
+}
+
+.text-field-form {
+  -fx-padding: 0 0 0 10;
+  -fx-border-width: 2;
+  -fx-border-color: #1ab188;
+}
+
+.image-view {
+  -fx-border-radius: 20px;
+}
+.imageView {
+  -fx-fit-width: 250px; /* Lebar ImageView */
+  -fx-fit-height: 300px; /* Tinggi ImageView */
+  -fx-preserve-ratio: true; /* Gambar menyesuaikan rasio ImageView */
+}
+
+.combo-box {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+  -fx-font-size: 14px;
+}
+
+.combo-box .list-cell .text {
+  -fx-fill: white;
+  -fx-background-color: black;
+}
+
+.combo-box .list-cell {
+  -fx-background-color: black;
+}
+.combo-box .list-cell:hover {
+  -fx-background-color: #303030;
+}
+
+
+.chart-plot-background {
+  -fx-background-color: #1a1a1a;
+}
+
+.default-color0.chart-series-area-fill {
+  -fx-fill: #00ffb774;
+}

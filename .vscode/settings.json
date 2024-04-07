@@ -1,0 +1,5 @@
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar", "d:\\Prabawikan\\BELAJAR PEMROGRAMAN\\JAVA\\MySqlJdbcDriver\\mysql-connector-j-8.0.32.jar", "src/MySqlJdbcDriver/mysql-connector-j-8.0.32.jar"]
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1166.0" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerOrderController">
+   <children>
+      <TableView fx:id="tableView" layoutX="382.0" layoutY="81.0" onMouseClicked="#customerOrderSelectData" prefHeight="419.0" prefWidth="1126.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="81.0">
+        <columns>
+          <TableColumn fx:id="col_username" prefWidth="196.00005722045898" text="USERNAME" />
+          <TableColumn fx:id="col_productName" prefWidth="198.3999786376953" text="PRODUCT NAME" />
+            <TableColumn fx:id="col_quantity" prefWidth="101.5999755859375" text="QUANTITY" />
+            <TableColumn fx:id="col_location" prefWidth="242.39996337890625" text="LOCATION" />
+            <TableColumn fx:id="col_date" prefWidth="172.79998779296875" text="DATE" />
+            <TableColumn fx:id="col_status" prefWidth="215.99993896484375" text="STATUS" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfUsername" layoutX="443.0" layoutY="24.0" prefHeight="26.0" prefWidth="200.0" promptText="Search" style="-fx-border-color: black; -fx-padding: 5 5 5 10; -fx-text-inner-color: black; -fx-border-width: 1; -fx-border-radius: 50;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="boxStatus" layoutX="647.0" layoutY="525.0" prefHeight="30.0" prefWidth="170.0" promptText="Status" />
+      <Label layoutX="260.0" layoutY="530.0" text="Username  :">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="572.0" text="Product Name  :">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="614.0" text="Quantity  :">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="303.0" layoutY="656.0" text="Date  :">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="571.0" layoutY="530.0" text="Status  :">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUsername" layoutX="368.0" layoutY="530.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelProductName" layoutX="368.0" layoutY="572.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelQuantity" layoutX="368.0" layoutY="614.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDate" layoutX="368.0" layoutY="655.0" prefHeight="22.0" prefWidth="170.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonUpdate" layoutX="633.0" layoutY="599.0" mnemonicParsing="false" onAction="#handleButtonUpdate" prefHeight="40.0" prefWidth="100.0" style="-fx-background-radius: 44;" text="Update">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonSearch" layoutX="661.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonSearch" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 44;" text="Search">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
